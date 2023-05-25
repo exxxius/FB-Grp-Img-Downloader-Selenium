@@ -24,9 +24,9 @@
 #
 # # Log in to your Facebook account
 # email = driver.find_element(By.NAME, "email")
-# email.send_keys("exotica_band@yahoo.com")
+# email.send_keys("YOUR FACEBOOK USERNAME") //FB username/email
 # password = driver.find_element(By.NAME, "pass")
-# password.send_keys("Freedom 1s My R1ght")
+# password.send_keys("YOUR FACEBOOK PASSWORD") //FB password
 # password.send_keys(Keys.RETURN)
 #
 # # Read the links from a text file
@@ -110,9 +110,9 @@ def login():
     driver = webdriver.Chrome()
     driver.get("https://www.facebook.com/")
     email = driver.find_element(By.NAME, "email")
-    email.send_keys("eli.davis2020@gmail.com")
+    email.send_keys("YOUR FACEBOOK USERNAME") # FB username/email
     password = driver.find_element(By.NAME, "pass")
-    password.send_keys("FreedoM777!")
+    password.send_keys("YOUR FACEBOOK PASSWORD")  # FB password
     password.send_keys(Keys.RETURN)
     time.sleep(5)
     cookies = driver.get_cookies()
